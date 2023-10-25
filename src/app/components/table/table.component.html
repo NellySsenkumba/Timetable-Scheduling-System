@@ -1,0 +1,45 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="col-md-12">
+                        <button class="card-header-primary" style="color: #FFFF; ; border-radius:100%; border-style: none; margin-top: 15px; margin-left: 45%;"
+                                data-toggle="modal"
+                                data-target="#exampleModalLong"><i class="fa fa-user-plus"></i>
+
+                        </button>
+                        <br><br><br>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <app-form></app-form>
+                    </div>
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title ">Simple Table</h4>
+                        <p class="card-category"> Here is a subtitle for this table</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                <th> #</th>
+                                <th *ngFor="let header of tableHeader"> {{header}}</th>
+                                <th> Action</th>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let obj of tableBody; let i =index">
+                                    <td> {{i+1}}</td>
+                                    <td *ngFor="let att of tableHeader"> {{obj[att]}}</td>
+                                    <td class="text-primary"> edit</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

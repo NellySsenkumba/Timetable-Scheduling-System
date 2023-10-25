@@ -1,0 +1,49 @@
+[class*=loginMainPage] {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+[class*=moonLightDescription] {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  color: #1f549e;
+}
+
+[class*=moonLightTitle] {
+  color: #1f549e !important;
+}
+
+[class*=formAlignmentControl] {
+  display: flex;
+  justify-content: center;
+}
+
+[class*=moonLightForm] {
+  align-items: center;
+  width: 80%;
+  margin-block-end: 1em;
+}
+[class*=moonLightForm] > div label {
+  color: #1f549e !important;
+  font-size: 15px;
+}
+[class*=moonLightForm] > div input {
+  width: 100% !important;
+}
+[class*=moonLightForm] button {
+  font-variant: small-caps;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+  background-color: #1f549e;
+}
+
+[class*=loginFooterPlate] i {
+  color: #1f549e !important;
+  font-size: x-large;
+}
+
+[class*=cardBodyLine] hr {
+  border: 0.001em #1f549e solid;
+}/*# sourceMappingURL=login.component.css.map */

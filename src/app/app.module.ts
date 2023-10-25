@@ -8,12 +8,14 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { TeacherComponent } from './teacher/teacher.component';
-import { TableComponent } from './table/table.component';
+import { TableComponent } from './components/table/table.component';
 import { SubjectComponent } from './subject/subject.component';
 import {MatButtonModule} from "@angular/material/button";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import { StreamComponent } from './stream/stream.component';
+import { TimeslotComponent } from './timeslot/timeslot.component';
+import { LessonComponent } from './lesson/lesson.component';
 
 @NgModule({
     imports: [
@@ -35,6 +37,8 @@ import { StreamComponent } from './stream/stream.component';
     TableComponent,
     SubjectComponent,
     StreamComponent,
+    TimeslotComponent,
+    LessonComponent,
 
   ],
   providers: [

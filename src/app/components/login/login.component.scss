@@ -1,0 +1,71 @@
+[class*="loginMainPage"] {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+[class*="moonLightDescription"] {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    color: #1f549e;
+}
+
+
+[class*="moonLightTitle"] {
+    color: #1f549e !important;
+}
+
+
+[class*="formAlignmentControl"] {
+    // border: purple 1px solid;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+[class*="moonLightForm"] {
+    // border: red dashed 5px;
+    align-items: center;
+    width: 80%;
+    margin-block-end: 1em;
+
+    &>div {
+
+        label {
+            color: #1f549e !important;
+            font-size: 15px;
+        }
+
+        input {
+            width: 100% !important;
+        }
+
+    }
+
+    button {
+        font-variant: small-caps;
+        font-weight: 700;
+        color: #fff;
+        font-size: 15px;
+        background-color: #1f549e;
+    }
+
+}
+
+[class*="loginFooterPlate"] {
+    i {
+        color: #1f549e !important;
+        font-size: x-large;
+
+    }
+}
+
+[class*="cardBodyLine"] {
+
+    // border: ed solid 2px;
+    hr {
+        border: .001em #1f549e solid;
+    }
+}
