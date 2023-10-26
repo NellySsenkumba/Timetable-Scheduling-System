@@ -41,13 +41,13 @@ export class FormComponent implements OnInit {
 
     onSubmit() {
         let teacher: AddTeacherForm = {
-            "firstName": this.firstName,
-            "lastName": this.lastName,
-            "middleName": this.middleName,
-            "email": this.email,
-            // "dateOfBirth": this.dateOfBirth,
-            "dateOfBirth":"04-12-1995",//getting the dob
-            "phoneNumber": this.phoneNumber
+            firstName: this.firstName,
+            lastName: this.lastName,
+            middleName: this.middleName,
+            email: this.email,
+            // dateOfBirth: this.dateOfBirth,
+            dateOfBirth:"04-12-1995",//getting the dob
+            phoneNumber: this.phoneNumber
         };
         this.teacherService.addTeacher(teacher)
             .subscribe(value => value);
