@@ -23,12 +23,12 @@ export class FormComponent implements OnInit {
         ["City", "text"],
         ["City", "text"],
     ];
-    firstName: string
-    lastName: string
-    middleName: string
-    email: string
-    phoneNumber: number
-    dateOfBirth: string//"04-12-1995"
+    firstName: string;
+    lastName: string;
+    middleName: string;
+    email: string;
+    phoneNumber: number;
+    dateOfBirth: string;//"04-12-1995"
 
 
     constructor(
@@ -40,17 +40,21 @@ export class FormComponent implements OnInit {
     }
 
     onSubmit() {
+        console.log(this.dateOfBirth)
+        ;
         let teacher: AddTeacherForm = {
             firstName: this.firstName,
             lastName: this.lastName,
             middleName: this.middleName,
             email: this.email,
-            // dateOfBirth: this.dateOfBirth,
-            dateOfBirth:"04-12-1995",//getting the dob
+            dateOfBirth: this.dateOfBirth,
+            // dateOfBirth: "04-12-1995",//getting the dob //mm-dd-yyyy
             phoneNumber: this.phoneNumber
         };
         this.teacherService.addTeacher(teacher)
-            .subscribe(value => value);
+            .subscribe(value => value
+                , error => console.log("error")
+                , ()=>location.reload());
 
     }
 

@@ -50,6 +50,17 @@
                                             </mat-form-field>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <mat-form-field class="example-full-width">
+                                                <input [(ngModel)]="dateOfBirth" matInput placeholder="Date of Birth"
+                                                       type="date" max="today" pattern="^[0-9]{2}-[0-9]{2}-[0-9]{4}$" >
+
+                                            </mat-form-field>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                                 <button mat-raised-button type="submit"
                                         class="btn btn-primary pull-right" value="Submit">Submit
